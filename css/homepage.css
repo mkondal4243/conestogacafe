@@ -1,0 +1,515 @@
+body {
+    margin: 0px;
+    color:#b4996e;
+    font-family: 'Roboto';
+
+}
+.logo {
+  font-family: 'Roboto';
+}
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #000;
+    color: #fff;
+   }
+   .nav-links a {
+    color: #b4996e;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 25px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 0em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #b4996e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    color:#000;
+   }
+   .nav-links a:hover {
+    color: #000;
+    font-weight: 600;
+}
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: transparent;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: transparent;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+   ul.nav-links {
+    list-style-type: none;
+}
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#000;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    border:1px solid;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:transparent;
+    transition: 0.3s ease;
+    border-bottom:1px solid;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: transparent;
+   }
+   .nav-links a:hover {
+    background-color: transparent;
+    border-bottom:1px solid ;
+}
+   }
+
+  /* header css end here */
+  /* hero image css start here */
+  #bannerimage {
+    width: 100%;
+    background-image: url(../img/campus-waterloo.jpg);
+    height: 405px;
+    background-color: purple;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  /* hero image css end here */
+  /* gap class css start here*/
+  .clearfix
+  {
+    height:20px;
+  }
+  /* gap class css end here*/
+  /* section  css start here */
+  .textcontent {
+    font-size: 18px;
+    background: #b4996e;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+/* section  css end here */
+/* section one css start here */
+.column-one {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section.section-one {
+    height: 270px;
+}
+  
+  /* Clear floats after the columns */
+  .row-width{
+width:100%
+  }
+  .content-right h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.content-right {
+    padding-left: 40px;
+}
+.content-right p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+.image-left img {
+    border-radius: 35px;
+    width: 100%;
+    height: 275px;
+}
+
+/* section one css end here */
+/* section two css start here */
+section.section-two{
+  height: 290px;
+}
+
+.image-right img {
+    border-radius: 35px;
+    width: 100%;
+    height: 290px;
+}
+.Content-left {
+    padding-right: 40px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+.Content-left p {
+  font-size:18px;
+}
+.Content-left h2 {
+    text-align: center;
+}
+/* section two css end here */
+
+/* section three css start here */
+section.section-three{
+  height: 270px;
+}
+/* section three css end here */
+/* footer css start here */
+footer.footer-color {
+    background: #000;
+    margin-top: 40px;
+   
+}
+.footer-text p {
+    color: #b4996e;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-text {
+    padding: 1px 0px;
+}
+
+/* footer css end here */
+/* contact page css start here */
+#bannerimage-contact {
+    width: 100%;
+    background-image: url(../img/contact-us.jpg);
+    height: 405px;
+    background-color: purple;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .row.contact-space {
+    margin-top: 40px;
+}
+.contact-text h2 {
+    margin: 0px;
+    text-align: center;
+}
+
+.contact-color {
+    background: #dddddd;
+    padding: 30px;
+}
+
+.gapright {
+  padding-right: 5px;
+}
+
+  /* Create two columns that float next to eachother */
+  .column-contact {
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  p.detail-color {
+    background: #000;
+    padding: 22px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+p.detail-color a {
+  color: #b4996e;
+}
+p.detail-color a:hover {
+  color: #fff;
+}
+/* contact page css end here */
+/* about page css start here */
+#bannerimage-about {
+  width: 100%;
+  background-image: url(../img/cafe.jpeg);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.section-four {
+  height: 415px;
+  padding-top: 40px;
+}
+.image-left-about img {
+  border-radius: 35px;
+  width: 100%;
+  height: auto;
+}
+/* about page css end here */
+/* menu page css start here */
+#bannerimage-menu {
+  width: 100%;
+  background-image: url(../img/Menu.jpg);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.section-fifth {
+  height: 690px;
+  margin-top: 40px;
+}
+
+/* menu page css end here */
+/* media query start here */
+@media screen and (min-width:320px) and (max-width:767px)
+{
+  .container.hiddenmobile {
+    display: none !important;
+}
+
+.hiddenmobile {
+  display: none !important;
+}
+
+.container.hiddendesktop {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#bannerimage {
+  height: 190px;
+}
+.overlaytext {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: 'Roboto';
+}
+.overlaytext img {
+  border-radius: 25px;
+}
+.menu {
+  top: 63px;
+  padding: 0px 0;
+}
+.menu li {
+  padding: 15px 0px;
+    border-bottom: 1px solid;
+    font-size: 18px;
+}
+.menu li + li {
+  margin-top: 0px;
+}
+footer.footer-color {
+  margin-top: 30px;
+}
+/* contact page css start here */
+#bannerimage-contact {
+  height: 145px;
+}
+.column-contact {
+  float: none;
+  width: 100%;
+  margin-top: 15px;
+}
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+iframe.mobilelesswdth {
+  width: -webkit-fill-available;
+}
+.contact-color {
+  padding: 15px;
+}
+/* contact page css end here */
+/* about page css start here */
+.column-one.aboutus {
+  float: none;
+  width: 100%;
+}
+.content-right.about-us {
+  padding-left: 0px;
+}
+section.section-four {
+  height: auto;
+  padding-top: 40px;
+}
+#bannerimage-about {
+  height: 236px;
+}
+h2.hiddendesktop {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+/* about page css end here */
+/* menu page css start here */
+section.section-fifth {
+  height: auto;
+}
+.column-three {
+  float: none;
+  width: 100%;
+}
+#bannerimage-menu {
+  height: 150px;
+}
+/* menu page css end here */
+}
+@media screen and (min-width:768px) and (max-width:2000px)
+{
+  .container.hiddendesktop {
+    display: none !important;
+}
+.hiddendesktop {
+  display: none !important;
+}
+}
+@media screen and (min-width:768px) and (max-width:1023px)
+{
+  section.section-one {
+    height: 280px;
+}
+.content-right h2 {
+  margin: 0px;
+}
+.Content-left h2 {
+  margin: 0px;
+}
+section.section-two {
+  height: 295px;
+}
+section.section-three {
+  height: 280px;
+}
+footer.footer-color {
+  margin-top: 30px;
+}
+/* menu css start here */
+section.section-fifth {
+  height: 380px;
+}
+/* menu css end here */
+}
+@media screen and (min-width:1024px) and (max-width:1073px)
+{
+  section.section-one {
+    height: 280px;
+}
+.content-right h2 {
+  margin: 0px;
+}
+.Content-left h2 {
+  margin: 0px;
+}
+section.section-two {
+  height: 295px;
+}
+section.section-three {
+  height: 290px;
+}
+footer.footer-color {
+  margin-top: 20px;
+}
+/* menu css start here */
+section.section-fifth {
+  height: 530px;
+}
+/* menu css end here */
+}
+/* media query end here */
